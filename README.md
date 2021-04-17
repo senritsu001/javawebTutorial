@@ -8,7 +8,7 @@ This is the main branch
 - scannerの入力値をDBにloginテーブルのデータを検索してチェックする
 
 #### 4/18 馬　タスク
-- gihubアカウント作成
+- githubアカウント作成
 - JDKをインストール（JDK11でいい）
 - 基礎Java文法を練習する（例：基礎データ型、IF、FORなど）
 
