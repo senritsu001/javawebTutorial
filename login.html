@@ -46,32 +46,24 @@
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/bootstrap.js"></script>
   <script>
-    var users_db = {
-      "abcd@gmail.com": "1234qwer",
-      "efgh@gmail.com": "qwer1234",
-      "ijkl@gmail.com": "2345wertqwer",
-      "mnlm@gmail.com": "wert2345",
-    };
-
     $("#sign-in-btn").click(function () {
       var email = $("#email-inp").val();
+      var emReg = /^[-_A-Za-z0-9]+@([_A-Za-z0-9]+\.)+[A-Za-z0-9]{2,3}$/;
       var psd = $("#psd-inp").val();
-      var keys = Object.keys(users_db);
+      var psdReg = /^[A-Za-z0-9]{6}$/;
+
+      var flagemail = emReg.test(email);
+      var flagpsd = psdReg.test(psd);
 
       if (null == email || "" == email) {
-        alert("Input the email address!");
+        alert("请规范输入邮箱@xx.xxx地址！");
       }
-
-      if (keys.indexOf(email) != -1) {
-        if (psd === users_db[email]) {
-          alert("OK!");
-        } else {
-          alert("Error: " + psd);
-        }
-      } else {
-        alert("Error: " + email);
-      }
-    });
+      if(flagemail == true && flagpsd == true ){
+        alert("登陆成功！您的账户名和密码为：" + email + "和" + psd);
+      	}else if(flagemail == true && flagpsd != true){
+          alert("密码输入错误，密码必须由6位字母或数字组成请您重新输入！");
+        }else{}
+        });
   </script>
 </body>
 
