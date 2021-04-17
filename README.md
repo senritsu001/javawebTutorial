@@ -1,9 +1,15 @@
 # javawebTutorial
 This is the main branch
-Okato
-修正宋
-=======
-### This is a test branch
+
+
+#### 4/18 宋　タスク
+- Login.htmlでのJavaScript単項目チェックをJavaで実現（eclipseでscanner）
+- DBでloginテーブル作成する
+- scannerの入力値をDBにloginテーブルのデータを検索してチェックする
+
+#### 4/18 馬　タスク
+- JDKをインストール（JDK11でいい）
+- 基礎Java文法を練習する（例：基礎データ型、IF、FORなど）
 
 #### 4/17 宋　タスク
 - login.html 引き続き開発
